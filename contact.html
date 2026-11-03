@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Tiyan Digital</title>
+<meta name="description" content="Book a free 45-minute workflow audit. We map one of your workflows live — you keep the blueprint either way.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'><rect width='26' height='26' rx='7' fill='%23D7F74B'/></svg>">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html" aria-label="Tiyan Digital home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#101210" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      Tiyan&nbsp;Digital
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="workflows.html">Workflows</a>
+      <a href="integrations.html">Integrations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="contact.html">Free workflow audit</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<div class="hero wrap" style="padding-bottom:24px">
+  <p class="eyebrow rv"><span class="dot"></span>Contact</p>
+  <h1 class="rv" data-d="0.1">Book the<br>free <em>audit.</em></h1>
+  <p class="lede rv" data-d="0.2">45 minutes. We map one workflow live, you keep the blueprint. No pitch deck, no pressure.</p>
+</div>
+
+<section class="wrap" style="padding-top:48px">
+  <div class="contact-grid">
+    <form id="audit-form" class="rv" novalidate>
+      <div class="field">
+        <label for="cf-name">Your name <span class="req">*</span></label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Rivera">
+        <p class="form-err" id="cf-name-err">Please enter your name.</p>
+      </div>
+      <div class="field">
+        <label for="cf-email">Work email <span class="req">*</span></label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com">
+        <p class="form-err" id="cf-email-err">Please enter a valid email address.</p>
+      </div>
+      <div class="field">
+        <label for="cf-co">Company</label>
+        <input id="cf-co" name="company" type="text" autocomplete="organization" placeholder="Company name">
+      </div>
+      <div class="field">
+        <label for="cf-msg">Which workflow hurts most? <span class="req">*</span></label>
+        <textarea id="cf-msg" name="message" placeholder="e.g. Our content approvals live in chat threads and things keep slipping…"></textarea>
+        <p class="form-err" id="cf-msg-err">Tell us briefly which workflow you want mapped.</p>
+        <p class="hint">A sentence or two is plenty.</p>
+      </div>
+      <label class="consent">
+        <input type="checkbox" id="cf-consent">
+        <span>I agree to be contacted about my audit request. My details are only used to arrange the call — never shared or sold. See the <a href="privacy.html">Privacy Policy</a>.</span>
+      </label>
+      <p class="form-err" id="cf-consent-err">Please tick the consent box so we can reply to you.</p>
+      <button class="btn btn-primary" type="submit">Request the free audit</button>
+      <div class="form-ok" id="form-ok" role="status">
+        <strong>Request ready.</strong> Your email app should have opened with the message addressed to us — just hit send. We reply within one business day.
+      </div>
+    </form>
+    <aside class="contact-side rv" data-d="0.1">
+      <h3>What happens next</h3>
+      <div class="contact-row"><span class="k">Step 1</span><span>You send the request. We reply within one business day with two time options.</span></div>
+      <div class="contact-row"><span class="k">Step 2</span><span>45-minute video call. We map one workflow live on a shared diagram.</span></div>
+      <div class="contact-row"><span class="k">Step 3</span><span>You get the blueprint and a fixed quote. Hire us or take the map elsewhere — it's yours.</span></div>
+      <div class="contact-row"><span class="k">Email</span><span class="mono">contact@tiyandegital.com</span></div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#101210" stroke-width="2.4" stroke-linecap="round"/></svg></span>Tiyan&nbsp;Digital</a>
+        <p>Workflow automation for teams that have outgrown manual work. Built on Make, n8n and Zapier.</p>
+      </div>
+      <div><h4>Explore</h4><a href="workflows.html">Workflows</a><a href="integrations.html">Integrations</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+      <div><h4>Services</h4><a href="workflows.html">Content pipelines</a><a href="workflows.html">Lead &amp; asset intake</a><a href="workflows.html">Reporting automation</a><a href="integrations.html">AI integrations</a></div>
+      <div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="yr">2026</span> Tiyan Digital. Proposal demo site.</span>
+      <span class="mono">BUILT ON MAKE · N8N · ZAPIER</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

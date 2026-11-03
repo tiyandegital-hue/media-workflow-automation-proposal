@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workflow Blueprints — Tiyan Digital</title>
+<meta name="description" content="Three concrete automation blueprints for media teams: content pipeline, asset intake, and reporting. See exactly what gets automated.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'><rect width='26' height='26' rx='7' fill='%23D7F74B'/></svg>">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html" aria-label="Tiyan Digital home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#101210" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      Tiyan&nbsp;Digital
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="workflows.html" class="active">Workflows</a>
+      <a href="integrations.html">Integrations</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="contact.html">Free workflow audit</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<div class="hero wrap" style="padding-bottom:24px">
+  <p class="eyebrow rv"><span class="dot"></span>Workflow blueprints</p>
+  <h1 class="rv" data-d="0.1">Three workflows.<br>Ready to <em>steal.</em></h1>
+  <p class="lede rv" data-d="0.2">These are real blueprints, not feature lists. Each one shows the exact steps, the tools involved, and the manual work it replaces.</p>
+</div>
+
+<section class="wrap" style="padding-top:48px">
+
+  <!-- BLUEPRINT 1 -->
+  <article class="blueprint rv">
+    <div class="blueprint-head">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>Blueprint 01</p>
+        <h3>Content pipeline, end to end</h3>
+        <p>From brief to published post without a single manual handoff. The team writes and approves; the system moves everything else.</p>
+        <div class="replaces"><p class="k">Replaces</p><p>Copying briefs into docs, chasing reviewers in chat, manually uploading assets, "did this go out?" messages.</p></div>
+      </div>
+      <div>
+        <p class="eyebrow">Trigger</p>
+        <p class="muted" style="font-size:15px">New row added to the <span class="mono">content_briefs</span> sheet, or a form submission. Everything downstream fires automatically.</p>
+      </div>
+    </div>
+    <div class="blueprint-diagram">
+      <div class="flow" role="list" aria-label="Content pipeline steps">
+        <div class="fnode" role="listitem"><p class="fk">Trigger</p><p class="fv">Brief logged</p><p class="fd">Sheets row or form</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">AI step</p><p class="fv">Draft generated</p><p class="fd">Claude writes from brief</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Task</p><p class="fv">Review card</p><p class="fd">Trello card assigned</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Human gate</p><p class="fv">Approve / edit</p><p class="fd">Only step needing a person</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Publish</p><p class="fv">Goes live</p><p class="fd">CMS + social queue</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Record</p><p class="fv">Assets filed</p><p class="fd">Drive + Airtable log</p></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- BLUEPRINT 2 -->
+  <article class="blueprint rv">
+    <div class="blueprint-head">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>Blueprint 02</p>
+        <h3>Intake that never drops anything</h3>
+        <p>Leads, assets, requests — everything that arrives gets logged, tagged, assigned and acknowledged in under a minute.</p>
+        <div class="replaces"><p class="k">Replaces</p><p>DMs that vanish, spreadsheets updated "later", leads answered three days late, nobody knowing who owns what.</p></div>
+      </div>
+      <div>
+        <p class="eyebrow">Trigger</p>
+        <p class="muted" style="font-size:15px">Form submit, email arrival, or new row — any door a request can walk through.</p>
+      </div>
+    </div>
+    <div class="blueprint-diagram">
+      <div class="flow" role="list" aria-label="Intake workflow steps">
+        <div class="fnode" role="listitem"><p class="fk">Arrives</p><p class="fv">Request captured</p><p class="fd">Form / email / DM</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">AI step</p><p class="fv">Tagged &amp; scored</p><p class="fd">Claude classifies intent</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Database</p><p class="fv">Logged once</p><p class="fd">Airtable record</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Task</p><p class="fv">Owner assigned</p><p class="fd">Trello by round-robin</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Notify</p><p class="fv">Instant ack</p><p class="fd">Slack + auto-reply</p></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- BLUEPRINT 3 -->
+  <article class="blueprint rv">
+    <div class="blueprint-head">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>Blueprint 03</p>
+        <h3>Reporting that writes itself</h3>
+        <p>Weekly performance digest assembled from every platform, summarized by AI, delivered Monday 9am. No more Friday scramble.</p>
+        <div class="replaces"><p class="k">Replaces</p><p>Screenshotting dashboards, pasting numbers into slides, "can someone pull the numbers?" every single week.</p></div>
+      </div>
+      <div>
+        <p class="eyebrow">Trigger</p>
+        <p class="muted" style="font-size:15px">Schedule — every Monday 08:00. Also on-demand with one command.</p>
+      </div>
+    </div>
+    <div class="blueprint-diagram">
+      <div class="flow" role="list" aria-label="Reporting workflow steps">
+        <div class="fnode" role="listitem"><p class="fk">Collect</p><p class="fv">Metrics pulled</p><p class="fd">Social + web APIs</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Store</p><p class="fv">Normalized</p><p class="fd">Sheets history</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">AI step</p><p class="fv">Summarized</p><p class="fd">Claude: wins, drops</p></div><div class="farrow hot">→</div>
+        <div class="fnode" role="listitem"><p class="fk">Deliver</p><p class="fv">Digest sent</p><p class="fd">Slack + email</p></div>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<!-- FINAL CTA -->
+<section class="wrap">
+  <div class="final rv">
+    <p class="eyebrow"><span class="dot"></span>Free workflow audit</p>
+    <h2>Which one hurts most?<br>Start there.</h2>
+    <p class="lede">We'll map your version of one of these blueprints on a 45-minute call. You keep the map.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="contact.html">Book the free audit</a>
+      <a class="btn btn-ghost" href="pricing.html">See pricing</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#101210" stroke-width="2.4" stroke-linecap="round"/></svg></span>Tiyan&nbsp;Digital</a>
+        <p>Workflow automation for teams that have outgrown manual work. Built on Make, n8n and Zapier.</p>
+      </div>
+      <div><h4>Explore</h4><a href="workflows.html">Workflows</a><a href="integrations.html">Integrations</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+      <div><h4>Services</h4><a href="workflows.html">Content pipelines</a><a href="workflows.html">Lead &amp; asset intake</a><a href="workflows.html">Reporting automation</a><a href="integrations.html">AI integrations</a></div>
+      <div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="yr">2026</span> Tiyan Digital. Proposal demo site.</span>
+      <span class="mono">BUILT ON MAKE · N8N · ZAPIER</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
